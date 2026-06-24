@@ -91,3 +91,38 @@ app.get('/pedidos/:id', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`API Raízes do Nordeste ativa na porta ${PORT}`));
+
+{
+  "unidadeId": 2,
+  "itens": [
+    { "produtoId": 101, "quantidade": 2 }
+  ],
+  "formaPagamento": "PIX"
+}
+
+{
+  "pedidoId": 1,
+  "status": "AGUARDANDO_PAGAMENTO",
+  "total": 79.80,
+  "itens": [
+    { "produtoId": 101, "quantidade": 2, "precoUnitario": 39.90 }
+  ]
+}
+
+{
+  "pedidoId": 1,
+  "simularSucesso": true
+}
+{
+  "transacaoId": "gw_tx_90011",
+  "pedidoId": 1,
+  "statusPagamento": "APROVADO",
+  "novoStatusPedido": "COZINHA"
+}
+{
+  "id": 1,
+  "canal_pedido": "TOTEM",
+  "unidade_id": 2,
+  "status": "COZINHA",
+  "total": 79.80
+}
